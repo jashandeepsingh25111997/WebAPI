@@ -26,6 +26,7 @@ namespace WebAPI.Migrations
             var sqlFile = Path.Combine(".\\DbScripts", @"data.sql");
 
             migrationBuilder.Sql(File.ReadAllText(sqlFile));
+            
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
